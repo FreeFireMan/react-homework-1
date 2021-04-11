@@ -1,0 +1,39 @@
+.block{
+    width: 100%;
+    max-width: 1950px;
+    height: 750px;
+    background: url("https://photo-lviv.in.ua/wp-content/uploads/2017/09/nagirniy01.jpg") no-repeat  ;
+    -webkit-background-clip: content-box;
+    color: transparent;
+    /*opacity: 60%;*/
+    background-position-x: 0;
+    animation: move 50s ease-in-out infinite;
+}
+
+@keyframes move{
+  0%{background-position-x: -1250px; }
+    50% {background-position-x: 1915px;}
+        100%{background-position-x: -1250px;}
+}
+
+.text_title{
+    position: relative;
+    margin: 0;
+}
+
+.text_title h1{
+    max-width: 950px;
+    position: absolute;
+    background-color: silver;
+    top: 140px;
+    margin: 0 0 0 155px;
+    line-height: 105px;
+    font-size: 80px;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 900;
+    background: linear-gradient(0.25turn, #FFFF00,#FFF000);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+}
