@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Card.module.css'
 
-export const Card = (prors)=>{
+export const Card = (props)=>{
     return(
 
             <div className={style.cards}>
@@ -10,11 +10,11 @@ export const Card = (prors)=>{
                     @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
                 </style>
 
-                <img src={prors.url_Img} alt=""/>
-                <h2>{prors.title_card}</h2>
-                <p>{prors.some_text}</p>
+                <img src={props.url_Img} alt=""/>
+                <h2>{props.title_card}</h2>
+                <p>{props.some_text}</p>
                 <button>
-                    {prors.more_info}
+                    {props.more_info}
                 </button>
             </div>
 
